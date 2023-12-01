@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <meta name="description" content="A story of love">
+    <meta name="keywords" content="love, proposal, story, writing, fantasy, elves">
+    <meta name="author" content="Just a guy">
+    <meta name="robots" content="index">
+    <meta property="og:title" content="Stories from Eldergrove">
+    <meta property="og:description" content="A simple story">
+    <!-- <meta property="og:image" content="https://www.relationship-love-probe.com/images/rlp-banner.png">
+    <meta property="og:url" content="https://www.relationship-love-probe.com"> -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32.png">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Stories from Eldergrove</title>
+</head>
+
+<body>
+    <div class="background-div"></div>
+    <div>
+        <div>
+            <h1 id="title">Stories from Eldergrove</h1>
+        </div>
+        <div id="continue-container">
+            <button id="continue-btn">A NEW LOVE</button>
+        </div>
+    </div>
+    <script>
+        const continueBtn = document.getElementById("continue-btn");
+        continueBtn.addEventListener("click", () => {
+            location.href = "./1";
+        })
+    </script>
+</body>
+
+</html>

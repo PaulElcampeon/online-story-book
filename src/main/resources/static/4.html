@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <meta name="description" content="A story of love">
+    <meta name="keywords" content="love, proposal, story, writing, fantasy, elves">
+    <meta name="author" content="Just a guy">
+    <meta name="robots" content="index">
+    <meta property="og:title" content="Stories from Eldergrove">
+    <meta property="og:description" content="A simple story">
+    <!-- <meta property="og:image" content="https://www.relationship-love-probe.com/images/rlp-banner.png">
+    <meta property="og:url" content="https://www.relationship-love-probe.com"> -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32.png">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Stories from Eldergrove</title>
+</head>
+
+<body>
+    <div class="background-div"></div>
+    <div class="story-container">
+        <h1>Chapter 4: The Response</h1>
+        <div class="story-text-container">
+            <section class="story-text">
+                So Robertina, what will the response be?
+            </section>
+            <section class="story-text hide">
+                "Yes, Paulious," Robertina finally whispered, her voice carrying the weight of joy and commitment.
+                "I would be honored to spend the rest of my life with you."
+            </section>
+            <section class="story-text hide">
+                Paulious's eyes lit up, and a surge of happiness rushed through him.
+                Rising from his knee, he slid the moonstone ring onto Robertina's finger, sealing their love in a
+                promise that sparkled like the stars.
+            </section>
+            <section class="story-text hide">
+                As if nature itself was rejoicing, the trees swayed with delight, casting playful shadows on the ground.
+                The flowers in the glade released their sweetest fragrance, and the nightingale's song grew more
+                melodious.
+                The mystical creatures of Eldergrove, sensing the joyous occasion, emerged from their hidden abodes to
+                witness the union.
+            </section>
+            <section class="story-text hide">
+                Paulious and Robertina, caught up in the magical celebration, danced together in the center of the
+                glade.
+                Their laughter intertwined with the natural symphony around them, and the forest responded in kind.
+                The leaves rustled in rhythm, creating a melody only heard on special occasions.
+            </section>
+            <section class="story-text">
+                <button id="yes-btn" class="btn">YES</button>
+                <button id="no-btn" class="btn">NO</button>
+                <button id="back-btn" class="hide">HOME</button>
+            </section>
+        </div>
+    </div>
+    <script>
+        const backBtn = document.getElementById("back-btn");
+        const yesBtn = document.getElementById("yes-btn");
+        const noBtn = document.getElementById("no-btn");
+
+        backBtn.addEventListener("click", () => {
+            location.href = "./";
+        })
+
+        yesBtn.addEventListener("click", () => {
+            hideYesAndNoButtons();
+            displayRestOfText();
+           
+            const collection = document.getElementsByClassName("story-text");
+           
+            for (let i = 0; i < collection.length; i++) {
+                collection[i].classList.remove('hide');
+            }
+
+            backBtn.classList.remove('hide');
+        })
+
+        noBtn.addEventListener("click", () => {
+            alert("Your not supposed to pick this try again");
+        })
+
+        function hideYesAndNoButtons() {
+            yesBtn.classList.add("hide");
+            noBtn.classList.add("hide");
+        }
+
+        function displayRestOfText() {
+
+        }
+
+    </script>
+</body>
+
+</html>

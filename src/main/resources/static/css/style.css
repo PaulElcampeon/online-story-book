@@ -1,0 +1,212 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0px;
+  font-family: "Papyrus", Fantasy;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.background-div {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  /* Set the width of the div */
+  height: 100%;
+  /* Set the height of the div */
+}
+
+.background-div::before {
+  content: "";
+  background-image: url("../images/background_1.png");
+  background-size: cover;
+  /* Adjust the background image size (e.g., 'cover', 'contain', or specific dimensions) */
+  opacity: 0.7;
+  /* Change the opacity value (0.0 to 1.0) */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#title {
+  letter-spacing: 0.5rem;
+  min-width: 350px;
+  text-align: center;
+  font-weight: bolder;
+}
+@media (max-width: 510px) {
+  #title {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 350px) {
+  #title {
+    font-size: 0.8rem;
+  }
+}
+
+#story {
+  text-align: center;
+  letter-spacing: 0.5rem;
+  margin-top: 0;
+  font-weight: bolder;
+}
+
+.story-container {
+  padding: 1rem;
+  width: 90vw;
+  height: 90vh;
+  min-width: 375px;
+}
+.story-container > h1 {
+  margin: 0rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.1rem;
+  padding: 1rem;
+}
+@media (max-width: 510px) {
+  .story-container > h1 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 450px) {
+  .story-container > h1 {
+    font-size: 1.2rem;
+  }
+}
+.story-container .story-text-container {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 90%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.story-container .story-text {
+  margin: 1rem;
+  line-height: 2rem;
+  letter-spacing: 0.2rem;
+  padding: 1rem;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.story-container .story-text.hide {
+  display: none;
+}
+
+#continue-container {
+  height: 60px;
+  width: 60%;
+  margin: auto;
+}
+@media (max-width: 510px) {
+  #continue-container {
+    height: 50%;
+  }
+}
+@media (max-width: 376px) {
+  #continue-container {
+    width: 50%;
+  }
+}
+#continue-container #continue-btn {
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+  font-family: "Papyrus", Fantasy;
+  letter-spacing: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: none;
+  border-radius: 0.7rem;
+}
+@media (max-width: 510px) {
+  #continue-container #continue-btn {
+    font-size: 0.5rem;
+  }
+}
+#continue-container #continue-btn:hover {
+  cursor: pointer;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.next-chapter-btn {
+  font-weight: bold;
+  font-family: "Papyrus", Fantasy;
+  letter-spacing: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: none;
+  border-radius: 0.7rem;
+  float: right;
+}
+.next-chapter-btn:hover {
+  cursor: pointer;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.9);
+}
+@media (max-width: 400px) {
+  .next-chapter-btn {
+    font-size: 0.7rem;
+  }
+}
+
+#back-btn {
+  font-weight: bold;
+  font-family: "Papyrus", Fantasy;
+  letter-spacing: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: none;
+  border-radius: 0.7rem;
+}
+#back-btn:hover {
+  cursor: pointer;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.9);
+}
+@media (max-width: 400px) {
+  #back-btn {
+    font-size: 0.7rem;
+  }
+}
+
+.btn {
+  font-weight: bold;
+  font-family: "Papyrus", Fantasy;
+  letter-spacing: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: none;
+  border-radius: 0.7rem;
+}
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.9);
+}
+@media (max-width: 400px) {
+  .btn {
+    font-size: 0.7rem;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */
